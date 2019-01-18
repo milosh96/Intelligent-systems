@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cubrilo.milos.cm150428d.StartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="0.05"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Player1" />
+
+        <TextView
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="130sp"
+            android:text="Player2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.27"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/player1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/p1_human"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Human" />
+            <RadioButton
+                android:id="@+id/p1_easy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Machine easy" />
+
+            <RadioButton
+                android:id="@+id/p1_intermediate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Machine intermediate" />
+
+
+
+            <RadioButton
+                android:id="@+id/p1_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Machine professional" />
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/player2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/p2_human"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Human" />
+
+            <RadioButton
+                android:id="@+id/p2_easy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Machine easy" />
+
+            <RadioButton
+                android:id="@+id/p2_intermediate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Machine intermediate" />
+
+            <RadioButton
+                android:id="@+id/p2_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Machine professional" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/treeDepth"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_weight="0.2"
+        android:hint="Tree depth" />
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:hint="Pole #1"
+        android:id="@+id/column1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Pole #2"
+        android:id="@+id/column2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Pole #3"
+        android:id="@+id/column3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Pole #4"
+        android:id="@+id/column4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Pole #5"
+        android:id="@+id/column5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:hint="Pole #6"
+        android:id="@+id/column6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Pole #7"
+        android:id="@+id/column7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Pole #8"
+        android:id="@+id/column8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Pole #9"
+        android:id="@+id/column9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Pole #10"
+        android:id="@+id/column10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.41"
+        android:onClick="leftClick"
+        android:paddingBottom="25sp"
+        android:paddingTop="25sp"
+        android:text="Begin the Game!!!" />
+
+</LinearLayout>
